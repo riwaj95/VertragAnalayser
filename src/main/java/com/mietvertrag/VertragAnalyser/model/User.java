@@ -32,7 +32,7 @@ public class User {
     protected void onCreate() {
         createdAt = LocalDateTime.now();
     }
-add
+
     public Long getId() {
         return id;
     }
