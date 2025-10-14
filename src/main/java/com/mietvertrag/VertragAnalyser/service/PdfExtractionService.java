@@ -21,7 +21,6 @@ public class PdfExtractionService {
                 throw new RuntimeException("Could not extract text from PDF. File might be scanned or encrypted.");
             }
 
-            // Clean up text
             text = cleanText(text);
 
             return text;
@@ -31,7 +30,6 @@ public class PdfExtractionService {
     }
 
     private String cleanText(String text) {
-        // Remove excessive whitespace
         text = text.replaceAll("\\s+", " ");
 
         // Remove special characters that might confuse AI
